@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  div.container
+    div(class="mb-3 mt-3")
+      h1= title
+      p Welcome to #{title}
+    div(class="mb-3")
+      form(id="uploadForm" enctype="multipart/form-data")
+        label(for="formFile" class="form-label") Select a video and click Submit to upload 
+        input(class="form-control" type="file" id="video" accept="video/*")
+        button(type="submit" class="btn btn-primary mt-2" id="uploadBtn" onclick='loading()') Submit
+      div#loading
+      div#finalLink
+
+
+  script( type="text/javascript" src='https://cdn.jsdelivr.net/npm/md5-js-tools@1.0.2/lib/md5.min.js')
+  script( type="text/javascript" src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js")
+  script( type="module" src='/javascripts/event.js')
+  script( type="text/javascript" src='/javascripts/loading.js')

@@ -1,0 +1,7 @@
+extends layout
+block content
+  div.url
+    h1 #{title}
+    h4#link Retrieval link (Please save this link): 
+    h5#link #{link}
+    a(href=`${link}`) Click here to download
