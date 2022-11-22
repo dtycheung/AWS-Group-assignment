@@ -15,3 +15,5 @@
 2. Run ```npm install```
 3. Creaate a ```.env``` and set the ```S3_BUCKET``` and ```REDIS_ENDPOINT``` variables
 4. Run ```npm start```
+
+Speacial thanks to my groupmate Tremaine Stroebel @tremaines
